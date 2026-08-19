@@ -1,0 +1,23 @@
+```yaml
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+
+  - job_name: "prometheus"
+    static_configs:
+      - targets:
+          - "localhost:9090"
+
+  - job_name: "linux-servers"
+    static_configs:
+      - targets:
+          - "SERVER1-IP:9100"
+        labels:
+          server: "monitoring-server"
+
+      - targets:
+          - "SERVER2-IP:9100"
+        labels:
+          server: "target-server"
+```
