@@ -661,46 +661,40 @@ Screenshots are included in the `screenshots/` directory.
 
 ---
 
-# 📁 Repository Structure
+## 📁 Repository Structure
 
 ```text
 prometheus-grafana-linux-monitoring/
 │
-├── architecture/
-│   └── monitoring-architecture.png
+├── README.md
 │
-├── prometheus/
-│   ├── prometheus.yml
-│   └── prometheus.service
+├── architecture.png
+│   └── Monitoring architecture diagram
 │
-├── node-exporter/
-│   └── node-exporter.service
+├── prometheus.yml
+│   └── Prometheus scrape configuration
 │
-├── grafana/
-│   └── dashboard-notes.md
+├── prometheus.service
+│   └── Prometheus systemd service configuration
 │
-├── scripts/
-│   ├── install-node-exporter.sh
-│   ├── install-prometheus.sh
-│   └── install-grafana.sh
+├── node-exporter.service
+│   └── Node Exporter systemd service configuration
 │
-├── screenshots/
-│   ├── 01-aws-ec2.png
-│   ├── 02-node-exporter-metrics.png
-│   ├── 03-prometheus-targets.png
-│   ├── 04-prometheus-query.png
-│   ├── 05-grafana-datasource.png
-│   └── 06-grafana-dashboard.png
+├── install_node_exporter.sh
+│   └── Node Exporter installation script
 │
-├── docs/
-│   ├── SOP.md
-│   ├── troubleshooting.md
-│   └── security-groups.md
+├── troubleshtooting.md
+│   └── Troubleshooting and connectivity guide
 │
-└── README.md
+└── Screenshots/
+    ├── AWS infrastructure
+    ├── Node Exporter metrics
+    ├── Prometheus targets
+    ├── Prometheus queries
+    ├── Grafana data source
+    └── Grafana dashboard
 ```
 
----
 
 # 🎯 Future Enhancements
 
